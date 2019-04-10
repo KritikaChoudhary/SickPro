@@ -1,13 +1,14 @@
 # SickPro - Your personal health assistant 
 ![not showing](https://github.com/nimishbongale/SickPro/blob/master/docs/sickpro6.PNG)
+
 This is an app which acts as your personal health assistant when you're sick.
 
 ## Installation
 
-Use basic [git](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) to install and run LaunchPedia.
+Use basic [git](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) to install and run SickPro.
 
 ```bash
-git clone https://github.com/nimishbongale/LaunchPedia.git
+git clone https://github.com/nimishbongale/SickPro.git
 ```
 
 Once cloned, the app may be run through appropriate softwares, such as android studio.
