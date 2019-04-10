@@ -1,4 +1,6 @@
 # SickPro
+![not showing](https://github.com/nimishbongale/SickPro/blob/master/docs/sickpro6.PNG)
+
 This is an app which acts as your personal health assistant when you're sick.
 
 ## Installation
