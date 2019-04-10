@@ -15,7 +15,7 @@ Once cloned, the app may be run through appropriate softwares, such as android s
 
 ## Usage
 
-Simply open the app, and make sure it has wifi access. All relevant information is displayed in a minimalist manner, and the controls are intutive.   
+Simply open the app, and make sure it has wifi access. All relevant information is displayed in a minimalist manner, and the controls are intuitive.   
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
