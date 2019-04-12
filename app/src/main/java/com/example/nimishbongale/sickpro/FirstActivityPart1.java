@@ -1,4 +1,4 @@
-package com.example.myproject2;
+package com.example.nimishbongale.sickpro;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
