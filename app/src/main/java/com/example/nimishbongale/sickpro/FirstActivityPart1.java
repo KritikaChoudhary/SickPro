@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
-public class FirstActivity extends AppCompatActivity {
+public class FirstActivityPart1 extends AppCompatActivity {
     Button b1,b2,b3,b4,b5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class FirstActivity extends AppCompatActivity {
         b5 = findViewById(R.id.button6);
 
 
-        /*final Intent explicit2= new Intent(MainActivity.this,.class);
+        final Intent explicit2= new Intent(MainActivity.this,.class);
 
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +52,6 @@ public class FirstActivity extends AppCompatActivity {
 
                 startActivity(explicit5);
             }
-        });*/
+        });
     }
 }
