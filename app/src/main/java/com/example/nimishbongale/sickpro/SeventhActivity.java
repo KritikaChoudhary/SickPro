@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class SeventhActivity extends AppCompatActivity {
     Button b1, b2, b3;
 
     @Override
