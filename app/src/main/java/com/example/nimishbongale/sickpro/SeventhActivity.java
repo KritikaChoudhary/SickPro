@@ -1,4 +1,4 @@
-package com.example.seventhactivity;
+package com.example.nimishbongale.sickpro;
 
 import android.content.Intent;
 
