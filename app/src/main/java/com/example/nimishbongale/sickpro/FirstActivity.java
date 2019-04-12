@@ -1,57 +1,35 @@
 package com.example.myproject2;
 
-import android.os.Bundle;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
-public class FirstActivity extends AppCompatActivity {
-    Button b1,b2,b3,b4,b5;
+public class MainActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first);
+        setContentView(R.layout.activity_main);
+        Button b7=findViewById(R.id.button7);
+        Button b1=findViewById(R.id.bu1);
 
-        b2 = findViewById(R.id.button3);
-        b3 = findViewById(R.id.button4);
-        b4 = findViewById(R.id.button5);
-        b5 = findViewById(R.id.button6);
-
-
-        /*final Intent explicit2= new Intent(MainActivity.this,.class);
-
-        b2.setOnClickListener(new View.OnClickListener() {
+        b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                startActivity(explicit2);
+                final Intent explicit=new Intent(MainActivity.this,FirstActivity.class);
+                startActivity(explicit);
             }
         });
-        final Intent explicit3= new Intent(MainActivity.this,.class);
-
-        b3.setOnClickListener(new View.OnClickListener() {
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                startActivity(explicit3);
+                Intent intent=new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:108"));
+                startActivity(intent);
             }
         });
-        final Intent explicit4= new Intent(MainActivity.this,.class);
-
-        b4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(explicit4);
-            }
-        });
-        final Intent explicit5= new Intent(MainActivity.this,.class);
-
-        b5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(explicit5);
-            }
-        });*/
     }
 }
