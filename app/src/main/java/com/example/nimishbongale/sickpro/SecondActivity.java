@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import java.io.File;
 
-public class Pres extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
