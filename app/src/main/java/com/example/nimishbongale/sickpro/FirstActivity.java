@@ -1,4 +1,4 @@
-package com.example.myproject2
+package com.example.myproject2;
 
 import android.content.Intent;
 import android.net.Uri;
