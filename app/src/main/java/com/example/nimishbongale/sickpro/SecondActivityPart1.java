@@ -1,4 +1,4 @@
-package com.example.sickpro2;
+package com.example.nimishbongale.sickpro;
 
 import android.content.Intent;
 import android.net.Uri;
