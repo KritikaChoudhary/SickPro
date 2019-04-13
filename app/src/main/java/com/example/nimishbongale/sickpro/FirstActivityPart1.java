@@ -17,7 +17,7 @@ public class FirstActivityPart1 extends AppCompatActivity {
         b5 = findViewById(R.id.button6);
 
 
-        final Intent explicit2= new Intent(MainActivity.this,.class);
+        final Intent explicit2= new Intent(FirstActivityPart1.this,EighthActivity.class);
 
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,7 +26,7 @@ public class FirstActivityPart1 extends AppCompatActivity {
                 startActivity(explicit2);
             }
         });
-        final Intent explicit3= new Intent(MainActivity.this,.class);
+        final Intent explicit3= new Intent(FirstActivityPart1.this,SecondActivityPart1.class);
 
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,7 +35,7 @@ public class FirstActivityPart1 extends AppCompatActivity {
                 startActivity(explicit3);
             }
         });
-        final Intent explicit4= new Intent(MainActivity.this,.class);
+        final Intent explicit4= new Intent(FirstActivityPart1.this,SeventhActivity.class);
 
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +44,7 @@ public class FirstActivityPart1 extends AppCompatActivity {
                 startActivity(explicit4);
             }
         });
-        final Intent explicit5= new Intent(MainActivity.this,.class);
+        final Intent explicit5= new Intent(FirstActivityPart1.this,ThirdActivity.class);
 
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
