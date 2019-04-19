@@ -18,11 +18,14 @@ public class FourthActivity extends AppCompatActivity {
         Button btnthird=(Button)findViewById(R.id.famdoc);
         Button btnfourth=(Button)findViewById(R.id.chem);
         Button btnfifth=(Button)findViewById(R.id.pa);
+        Button btnwow=(Button)findViewById(R.id.mq);
 
         btnfirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "9611000411"));
+                String uri = "uber://?action=setPickup&pickup=my_location";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(uri));
                 startActivity(intent);
             }
         });
@@ -63,6 +66,13 @@ public class FourthActivity extends AppCompatActivity {
             }
         });
 
+        btnwow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Intent implicit=new Intent (Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLScBD02liioN4gFNGO_c53BXvjDn7aGcENYb3IKdLE5HpfdT9w/viewform?usp=sf_link"));
+                startActivity(implicit);
+            }
+        });
+
     }
 }
-
