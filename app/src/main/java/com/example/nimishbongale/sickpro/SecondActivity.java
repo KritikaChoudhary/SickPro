@@ -1,62 +1,58 @@
 package com.example.nimishbongale.sickpro;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
-import android.os.Build;
-import android.os.Bundle;
-import android.os.Environment;
-import android.provider.MediaStore;
-import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
-
-import java.io.File;
 
 public class SecondActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pres);
-        Button button=(Button)findViewById(R.id.button4);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final int CAMERA_PIC_REQUEST = 1;
-                Intent photo= new Intent("android.media.action.IMAGE_CAPTURE");
-                startActivityForResult(photo, CAMERA_PIC_REQUEST);
-            }
-        });
-        Button btnl=(Button)findViewById(R.id.btnloc);
-        btnl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String uriText =
-                        "mailto:nimishnb98@gmail.com" +
-                                "?subject=" + Uri.encode("Prescription") +
-                                "&body=" + Uri.encode("1. Dolo 650 1-1-1-1\n 2.Allercet 0-0-1(3)\n3.Azilide 0-0-1(5)\n Address:-\n Gokula, M S Ramaiah Nagar, Mathikere, Bengaluru, Karnataka 560054");
+        setContentView(R.layout.activity_second);
+        Button b2 = findViewById(R.id.button3);
+        Button b3 = findViewById(R.id.button4);
+        Button b4 = findViewById(R.id.button5);
+        Button b5 = findViewById(R.id.button6);
 
-                Uri uri = Uri.parse(uriText);
-                Intent sendIntent = new Intent(Intent.ACTION_SENDTO);
-                sendIntent.setData(uri);
-                startActivity(Intent.createChooser(sendIntent, "Send email"));
-            }
-        });
-        Button btne=(Button)findViewById(R.id.button7);
-        btne.setOnClickListener(new View.OnClickListener() {
+
+        final Intent explicit2= new Intent(SecondActivity.this,EighthActivity.class);
+
+        b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://m.p-y.tm";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
+
+                startActivity(explicit2);
+            }
+        });
+        final Intent explicit3= new Intent(SecondActivity.this,SeventhActivity.class);
+
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(explicit3);
+            }
+        });
+        final Intent explicit4= new Intent(SecondActivity.this,TenthActivity.class);
+
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(explicit4);
+            }
+        });
+        final Intent explicit5= new Intent(SecondActivity.this,ThirdActivity.class);
+
+        b5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(explicit5);
             }
         });
     }
 }
-
