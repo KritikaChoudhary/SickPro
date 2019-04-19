@@ -7,17 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
 public class ThirdActivity extends AppCompatActivity {
-    Button b1, b2, b3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        b1 = findViewById(R.id.music);
-        b2 = findViewById(R.id.video);
-        b3 = findViewById(R.id.games);
+        setContentView(R.layout.activity_third);
+        Button b1 = findViewById(R.id.music);
+        Button b2 = findViewById(R.id.video);
+        Button b3 = findViewById(R.id.games);
         final Intent implicit= new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.jiosaavn.com/"));
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
